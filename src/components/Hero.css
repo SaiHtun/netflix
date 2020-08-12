@@ -1,0 +1,67 @@
+.hero {
+  margin-bottom: 0;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.fadeBottom {
+  height: 7.4rem;
+  background-image: linear-gradient(180deg, transparent, rgba(37,37,37, 0.61), #111);
+  transform: translateY(-115px);
+}
+
+.hero-info {
+  margin-left: 100px;
+  width: 60%;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.btn-play, .btn-myList {
+  padding: 10px 20px;
+  opacity: 0.6;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.hero-btns button:hover {
+  opacity: 1;
+  color: white;
+  background-color: rgb(223, 2, 2);
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.hero-descriptions {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .hero-btns, .hero-descriptions {
+    display: none;
+  }
+  .hero-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero-info {
+    margin-left: 0px;
+  }
+  .hero {
+    align-items: center;
+  }
+}
